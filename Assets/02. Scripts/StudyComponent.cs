@@ -47,7 +47,7 @@ public class StudyComponent : MonoBehaviour
     }
 
     // 큐브 생성 기능
-    void CreateCube(string name)
+    void CreateCube(string name = "Cube")
     {
         obj = new GameObject(name); // "Cube"라는 이름을 가진 오브젝트를 찾아서 obj에 할당
 
