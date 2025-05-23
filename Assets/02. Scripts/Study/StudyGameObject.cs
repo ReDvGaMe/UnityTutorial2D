@@ -10,7 +10,7 @@ public class StudyGameObject : MonoBehaviour
     [SerializeField] private Vector3 pos;
     [SerializeField] private Quaternion rot;
 
-    void Start()
+    void Awake()
     {
         CreateAmongUs();
 
@@ -29,12 +29,12 @@ public class StudyGameObject : MonoBehaviour
 
         Debug.Log($"<color=#0000FF> 오브젝트({name})</color>가 생성되었습니다.");
 
-        GameObject childObj = obj.transform.GetChild(0).gameObject; // 자식 오브젝트를 가져오는 기능
+        /* GameObject childObj = obj.transform.GetChild(0).gameObject; // 자식 오브젝트를 가져오는 기능
         Transform childObjTransform = childObj.transform; // 자식 오브젝트의 Transform을 가져오는 기능
         int count = childObjTransform.childCount; // 자식 오브젝트의 수를 가져오는 기능
 
         Debug.Log($"캐릭터의 자식 오브젝트의 수 : {count}");
         Debug.Log($"캐릭터의 첫번째 자식 오브젝트의 이름 : {childObjTransform.GetChild(0).name}");
-        Debug.Log($"캐릭터의 마지막 자식 오브젝트의 이름 : {childObjTransform.GetChild(count - 1).name}");
+        Debug.Log($"캐릭터의 마지막 자식 오브젝트의 이름 : {childObjTransform.GetChild(count - 1).name}"); */
     }
 }
